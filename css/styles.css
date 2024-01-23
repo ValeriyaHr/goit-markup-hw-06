@@ -42,9 +42,8 @@ ul, li {
     max-width: 320px;
     padding: 0 16px;
     margin: 0 auto;
-    background-color: aqua;
-
    }
+
    @media screen and (min-width: 768px) {
    .container{
    max-width: 768px;
@@ -232,3 +231,204 @@ ul, li {
    .button-close:focus > .icon-close {
      fill: #ffffff;
    }
+
+   /* Першая секція */
+
+.section-one {
+    background-color: #2E2F42;
+    padding:  72px 0; 
+}
+
+.overlay {
+    max-width: 320px;
+    height: 432px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),   rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.h-main {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.02em;
+    max-width: 288px; 
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-effective {
+    width: 432px;
+}
+
+.main-button {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  font-weight: 500;    
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  min-width: 169px;
+  height: 56px; 
+  border: none;
+  border-radius: 4px;
+  margin-top: 72px;  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+ /* друга секція  */
+
+ .section-principles {
+  color: #8E8F99;
+  padding: 96px 0;
+}
+
+.ul-section-approach {
+  background-color: #FFFFFF;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.apporoach-content {
+  max-width: 288px;
+
+}
+
+.apporoach-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.icon-apporoach {
+  display: none;
+}
+
+.content {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+.approach-content:last-child {
+  margin-bottom: 96px;
+}
+
+/* третя секція Our Team */
+
+.section-team {
+  background-color: #F4F4FD;
+  color: #2E2F42;
+  padding-bottom: 96px;
+}
+
+.h-main-two {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  padding-top: 96px;
+}
+
+.tittle-list-team {
+  text-align: center;
+  margin-bottom: 8px;
+  max-width: 264px;
+}
+
+.list-team {
+  border-radius: 0px 0px 4px 4px;
+  background: #FFF;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.autor{
+  padding: 32px 0 32px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background: #FFF;
+  margin-bottom: 72px;
+}
+
+.h-for-team {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.p-team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.social-links-autor{
+  display: flex;
+  gap: 24px;
+  background-repeat: no-repeat;
+  background-color: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.li-autor {
+  width: 40px;
+  height: 40px;
+  background-color:#4d5ae5;
+  border-radius:50%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.li-autor:hover,.li-autor:focus{
+  background-color: #404bbf; 
+}
+
+.background-social-network {
+  fill: #4d5ae5;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  }
+  .background-social-network:hover,
+.background-social-network:focus {
+  background-color: #404bbf;
+  fill: #404bbf;
+}
+
+ .social-link {
+    fill:#f4f4fd;
+ }
+
+ /* четверта секція Our Portfolio */
+
+ .section-portfolio {
+  font-weight: 500;
+  color: #8E8F99;
+  padding-bottom: 120px; 
+}
