@@ -1,3 +1,6 @@
+
+
+/** mobile All  x 320px ***/
 @media screen and (min-width: 320px) {
     .container {
       max-width: 320px;
@@ -5,14 +8,8 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-      background-color:blueviolet;
-    }
-  }
 
-
+/** DESCTOP   ***/
   @media screen and (min-width: 1158px) {
     .container {
       max-width: 1158px;
@@ -21,3 +18,79 @@
     }
   }
 
+
+
+/** IPAD x 768px ***/
+  @media screen and (min-width:768px) {
+   
+    .container {
+      max-width: 768px;
+      background-color:blueviolet;
+    }
+
+    .open-menu-btn {
+      display: none;
+    }
+
+    .logo {
+      margin-right: 120px;
+    }
+    
+    .nav-tittle {
+      display: flex;
+      gap: 40px;
+    }
+
+    .li-studio {
+      color: #2e2f42;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      padding: 24px 0;
+      display: block;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .li-studio:hover,
+  .li-studio:focus {
+    color: #404bbf;
+  }
+
+  .current {
+    position: relative;
+    color: #404bbf;
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+
+  .address-main { 
+     display: block;
+    }
+    .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    }
+    .address-link {
+    color: #434455;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+   }
+}
