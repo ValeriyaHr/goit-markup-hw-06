@@ -1,209 +1,205 @@
+/*** CSS FOR MOBILE **/
 body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    color: #434455;
-    background-color: #ffffff;  
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #434455;
+  background-color: #ffffff;  
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+    /* max-width: 100%;
+    height: auto; */
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+  margin: 0;
 }
 
 ul, li {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 .container {
-    max-width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
-   }
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
 
-   @media screen and (min-width: 768px) {
-   .container{
-   max-width: 768px;
-   background-color: blueviolet;
-   }
-   }
+.header-body {
+  border-bottom: 1px solid #e7e9fc;
+    }
 
-   @media screen and (min-width: 1158px) {
-   .container {
-   max-width: 1158px;
-   padding: 0 15px;
-   background-color: coral;
-   }
-   }
+.container-header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-   .header-body {
-     border-bottom: 1px solid #e7e9fc;
-   }
-   .container-header-menu {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-   }
-   .nav-tittle {
-     display: flex;
-     align-items: center;
-   }
-   .logo {
-     color: #4d5ae5;
-     font-family: Raleway, sans-serif;
-     font-size: 18px;
-     font-weight: 700;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
-     padding: 17px 0;
-   }
-   .logo-studio {
-     color: #2e2f42;
-   }
-   .ul-header-menu {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-   }
-   .address-main {
-     margin-left: auto;
-     display: none;
-   }
-   .open-menu-btn {
+.nav-tittle {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 17px 0;
+}
+
+.logo-studio {
+  color: #2e2f42;
+}
+
+.ul-header-menu {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.address-main {
+  margin-left: auto;
+  display: none;
+}
+
+.open-menu-btn {
    padding: 0;
    line-height: 0;
    background-color: transparent;
    cursor: pointer;
    border: none;
-   }
+}
 
+/* modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  position: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-   @media screen and (min-width: 1158px) {
-   .logo {
-   margin-right: 76px;
-   }
-   .address-list {
-     flex-direction: row;
-     gap: 40px;
-   }
-     .address-link {
-       font-size: 16px;
-       line-height: 1.5;
-     }
-   }
-   /* modal */
-   .backdrop {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: rgba(46, 47, 66, 0.4);
-     opacity: 0;
-     visibility: hidden;
-     position: none;
-     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-   .is-open {
-   opacity: 1;
-   visibility: visible;
-   pointer-events: auto;
-   }
-   .modal {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%) scale(1);
-     width: 408px;
-     min-height: 584px;
-     background-color: #fcfcfc;
-     border-radius: 4px;
-     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
-   .button-close {
-     position: absolute;
-     top: 24px;
-     right: 24px;
-     width: 24px;
-     height: 24px;
-     border-radius: 50%;
-     padding: 0;
-     cursor: pointer;
-     border: 1px solid rgba(0, 0, 0, 0.1);
-     background-color: #e7e9fc;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-   }
-   .button-close:hover,
-   .button-close:focus {
-     background-color: #404bbf;
-     border: none;
-   }
-   .icon-close {
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-   }
-   .button-close:hover > .icon-close,
-   .button-close:focus > .icon-close {
-     fill: #ffffff;
-   }
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.button-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.button-close:hover,
+.button-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.button-close:hover > .icon-close,
+.button-close:focus > .icon-close {
+  fill: #ffffff;
+}
+
+/* *********Мобільне меню********** */
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+}
 
    /* Першая секція */
 
 .section-one {
-    background-color: #2E2F42;
-    padding:  72px 0; 
+  background-color: #2E2F42;
+  padding:  72px 0; 
 }
 
 .overlay {
-    max-width: 320px;
-    height: 432px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),   rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  max-width: 320px;
+  height: 432px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),   
+  rgba(46, 47, 66, 0.7)),
+  url(../images/people-office-mob.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 } 
 
 .h-main {
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    max-width: 288px; 
-    text-align: center;
-    margin: 0 auto;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  max-width: 216px; 
+  text-align: center;
+  margin: 0 auto;
 }
 
 .container-effective {
-    width: 432px;
+  width: 100%;
 }
 
 .main-button {
@@ -242,7 +238,6 @@ ul, li {
 
 .apporoach-content {
   max-width: 288px;
-
 }
 
 .apporoach-tittle {
@@ -359,7 +354,8 @@ ul, li {
   align-items: center;
   border-radius: 50%;
   }
-  .background-social-network:hover,
+
+.background-social-network:hover,
 .background-social-network:focus {
   background-color: #404bbf;
   fill: #404bbf;
@@ -371,7 +367,7 @@ ul, li {
 
  /* четверта секція Our Portfolio */
 
- .section-portfolio {
+.section-portfolio {
   font-weight: 500;
   color: #8E8F99;
   padding-bottom: 120px; 
@@ -428,7 +424,9 @@ ul, li {
 }
 
 .portfolio-content:hover {
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+   0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+   0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .h-for-prtfolio {
@@ -784,7 +782,7 @@ background-color: #31d0aa;
 }
 
 .modal-text:focus {
-border-color: #4D5AE5;
+  border-color: #4D5AE5;
 }
 
 .check-privacy {
