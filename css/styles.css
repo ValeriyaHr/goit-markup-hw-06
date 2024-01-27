@@ -12,6 +12,7 @@ a {
 
 img {
   display: block;
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -481,6 +482,11 @@ display: none;
 
 /* синій текст замість картинки в 4 секції */
 .section-portfolio {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-cover-wrap{
   position: relative;
   overflow: hidden;
 }
