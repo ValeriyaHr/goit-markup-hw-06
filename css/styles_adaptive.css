@@ -16,13 +16,27 @@
 
   .apporoach-content {
     max-width: 288px;
+    }
+
+  .privacy-chekbox {
+    display: flex;
+  }
+  
+  .privacy-terms {
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
   }
 
+  .chekbox {
+    display: flex;
+    align-items: center;
+  }
 
-
-
-
-
+  .icon-span {
+    margin-right: 8px;
+  }
 
 }
 
@@ -33,7 +47,6 @@
   @media screen and (min-width:768px) {
     .container {
       max-width: 768px;
-      background-color:blueviolet;
     }
 
     .ul-header-menu {
@@ -187,11 +200,6 @@
     .conteiner-form {
       margin-left: 80px;
   }
- 
-
-
-
-
 
 }
 
@@ -219,10 +227,10 @@
     justify-content: center;
   }
  
-  .footer-info{
-    width: 768px;
+  .footer-info {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 108px;
   }
 
   .input-label-subscribe {
@@ -239,16 +247,10 @@
     }
 
     .conteiner-form {
-      margin: 0 auto;
-  }
+      margin: 0;
+    }
 
 }
-
-
-
-
-
-
 
 
 
@@ -256,7 +258,6 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    background-color:coral;
     padding: 0 15px;
   }
 
