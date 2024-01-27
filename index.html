@@ -19,13 +19,13 @@
 
 <!-- хедер -->
   <header class="header-body">
-    <div class="container container-header-menu is-open"> 
+    <div class="container container-header-menu"> 
       <nav class="nav-tittle">
         <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
           <ul class="ul-header-menu"> 
-            <li class="li-studio current"><a href="./index.html">Studio</a></li>
-            <li class="li-studio"><a href="">Portfolio</a></li>
-            <li class="li-studio"><a href="">Contacts</a></li>
+            <li class="li-studio current"><a href="./index.html" class="studio-link blue">Studio</a></li>
+            <li class="li-studio"><a href="#" class="studio-link">Portfolio</a></li>
+            <li class="li-studio"><a href="#" class="studio-link">Contacts</a></li>
           </ul>
       </nav>
          
@@ -45,24 +45,28 @@
         </svg>
       </button>
     </div>
-<!-- мобільне меню -->
+<!-- мобільне меню -->   <!-- is-open -->
     <div class="mob-menu">
-      <button type="button" class="button-close"></button>
+      <button type="button" class="button-close">
+        <svg class="icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
         <nav> 
           <ul class="mob-menu-list"> 
-            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link">Studio</a></li>
+            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link  blue">Studio</a></li>
             <li class="mob-menu-item"><a href="" class="mob-menu-link">Portfolio</a></li>
             <li class="mob-menu-item"><a href="" class="mob-menu-link">Contacts</a></li>
           </ul>
-         <address class="address-mob">
+         <address>
           <ul class="mob-address"> 
+            <li>
+              <a href="tel:+110001111111" class="mob-adress-info blue">+11 (000) 111-11-11</a>
+            </li>
             <li>
               <a href="mailto:info@devstudio.com" class="mob-adress-info">info@devstudio.com</a>
             </li>
-            <li>
-              <a href="tel:+110001111111" class="mob-adress-info">+11 (000) 111-11-11</a>
-            </li>
-        </ul>
+          </ul>
         </nav>
         <!-- Соціальні мережі -->
         <ul class="mob-soc-links">
@@ -171,7 +175,7 @@
                 src="./images/hero1.jpg" 
                 alt="Mark Guerrero" 
                 width="264" 
-                height="260">
+                height="260"/>
                 <div class="autor">
                   <h3 class="h-for-team">Mark Guerrero</h3>
                   <p class="p-team-text">Product Designer</p>
@@ -213,7 +217,7 @@
                 src="./images/hero2.jpg"
                 alt="Tom Ford"
                 width="264"
-                height="260">
+                height="260"/>
                 <div class="autor">
                     <h3 class="h-for-team">Tom Ford</h3>
                     <p class="p-team-text">Frontend Developer</p>
@@ -255,7 +259,7 @@
                 src="./images/hero3.jpg" 
                 alt="Camila Garcia"
                 width="264" 
-                height="260">
+                height="260"/>
               <div class="autor">
                   <h3 class="h-for-team">Camila Garcia</h3>
                   <p class="p-team-text">Marketing</p>
@@ -351,7 +355,7 @@
                   media="(min-width: 768px)"/>
                 <source
                   srcset="./images/banking.jpg 1x, ./images/banking@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  media="(min-width: 1158px)"/>
                 <img src="./images/banking.jpg"  alt="Banking App" width="360" height="300">
               </picture>
               <p class="portfolio-text-wrap portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -373,7 +377,7 @@
                   media="(min-width: 768px)"/>
                 <source
                   srcset="./images/cashless.jpg 1x, ./images/cashless@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  media="(min-width: 1158px)"/>
                 <img src="./images/cashless.jpg"  alt="Сashless Payment" width="360" height="300">
               </picture>
              <p class="portfolio-text-wrap portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -395,7 +399,7 @@
                   media="(min-width: 768px)"/>
                 <source
                   srcset="./images/meditation.jpg 1x, ./images/meditation@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  media="(min-width: 1158px)"/>
                   <img src="./images/meditation.jpg"  alt="Meditation App" width="360" height="300">
               </picture>
                 <p class="portfolio-text-wrap portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -417,7 +421,7 @@
                   media="(min-width: 768px)"/>
                 <source
                   srcset="./images/taxi.jpg 1x, ./images/taxi@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  media="(min-width: 1158px)"/>
                   <img src="./images/taxi.jpg"  alt="Taxi Service" width="360" height="300">
               </picture>
                 <p class="portfolio-text-wrap portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -439,7 +443,7 @@
                   media="(min-width: 768px)"/>
                 <source
                   srcset="./images/screen.jpg 1x, ./images/screen@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  media="(min-width: 1158px)"/>
                   <img src="./images/screen.jpg" alt="Screen Illustrations" width="360" height="300">
               </picture>
                 <p class="portfolio-text-wrap portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -461,7 +465,7 @@
                   media="(min-width: 768px)"/>
                 <source
                   srcset="./images/online.jpg 1x, ./images/online@2x.jpg 2x"
-                  media="(min-width: 1200px)"/>
+                  media="(min-width: 1158px)"/>
                   <img src="./images/online.jpg"  alt="Online Courses" width="360" height="300">
               </picture>
                <p class="portfolio-text-wrap portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
@@ -547,7 +551,7 @@
 
 <!-- Модальне вікно -->
 
-  <!-- <div class="backdrop is-open">
+  <div class="backdrop">         <!-- is-open -->
     <div class="modal">
 
         <button type="button" class="button-close">
@@ -614,7 +618,7 @@
             </label>
           </div>
 
-          <button type="submit" class="button-sent">Send</button> -->
+          <button type="submit" class="button-sent">Send</button>
     
       </form>
     </div>

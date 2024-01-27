@@ -15,13 +15,13 @@
   }
 
   .apporoach-content {
-    margin-right: 24px;  
-    /* width: calc((100% - 56px) / 2); */
+    max-width: 288px;
   }
 
-    .apporoach-content:last-child {
-      margin-right: 0;
-  }
+
+
+
+
 
 
 }
@@ -34,6 +34,26 @@
     .container {
       max-width: 768px;
       background-color:blueviolet;
+    }
+
+    .ul-header-menu {
+      background-color: #FFFFFF;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 40px;
+      color: #404bbf;
+    }
+
+    .address-main {
+      margin-left: auto;
+      display: block;
+    }
+
+    .mob-menu {
+      display: none;
     }
 
     .open-menu-btn {
@@ -50,6 +70,15 @@
       justify-content: space-between;
     }
 
+    .section-principles {
+      display: flex;
+    }
+
+    .apporoach-content {
+       margin-right: 24px; 
+       max-width: calc((100% - 56px) / 2);
+    }
+
     .section-team {
       background-color: #F4F4FD;
       font-weight: 500;
@@ -63,10 +92,6 @@
       background-color: #FFFFFF;
       letter-spacing: 0.02em;
       color: #2e2f42;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 40px;
     }
 
     .section-one {
@@ -101,19 +126,124 @@
     }
 
   .tittle-list-team {
-    display: flex;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+    display: flex; 
+    gap: 24px
   }
 
   .ul-section-portfolio {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px; 
+    gap: 24px; 
   }
+
+  .content {
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .autor {  
+    margin-bottom:0;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .logo-studio-fooler {
+    margin-bottom: 16px;
+  }
+
+  .footer-info{
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    margin-right: 120px;
+  }
+
+  .conteiner-form {
+    margin-left: 80px;
+  }
+
+  .form-subscribe{
+    display: flex;
+  }
+
+  .subscribe-text {
+    display: flex;
+  }
+
+  .footer-media {
+    display: flex;
+  }
+
+  .input-label-subscribe {
+   margin-right: 24px;
+   }
+
+   .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+
+ 
+
+
+
 
 
 }
+
+
+
+
+
+ /* Стилі для планшета тут */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+ 
+  .apporoach-content:not(:nth-last-child(-n+2)) {
+    margin-bottom: 72px;
+  }
+
+  .tittle-list-team {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .footer-info{
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .input-label-subscribe {
+    margin-bottom: 0;
+    }
+
+    .conteiner-form {
+      margin-left: 0;
+   }
+
+    .footer-logo {
+      margin-right: 24px;
+      text-align: start;
+    }
+
+    
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -125,13 +255,45 @@
     padding: 0 15px;
   }
 
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+
   .logo {
-      margin-right: 76px;
+    color: #4d5ae5;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 17px 0;
+  }
+
+  .logo-studio {
+    color: #2e2f42;
+  }
+
+  .nav-tittle {
+    display: flex;
+    align-items: center;
+  }
+
+  .address-main {
+    margin-left: auto;
+    display: flex;
   }
 
   .address-list {
       flex-direction: row;
       gap: 40px;
+  }
+
+  .ul-section-address {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
   }
 
   .address-link {
@@ -161,10 +323,17 @@
     } 
 
   .apporoach-content {
-    margin-right: 24px;  
     width: calc((100% - 264px) / 3);
     flex-wrap: nowrap;
   }
+
+  .apporoach-content:last-child {
+    margin-right: 0;
+}
+
+.ul-section-approach {
+  flex-wrap: nowrap;
+}
 
   .icon-apporoach {
     display: flex;
@@ -177,7 +346,16 @@
     margin-bottom: 8px;
   }
 
+  .apporoach-tittle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
+  .section-principles {
+    padding: 120px 0;
+  }
+ 
 
 
 }
