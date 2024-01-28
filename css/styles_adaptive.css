@@ -38,7 +38,22 @@
     margin-right: 8px;
   }
 
+
 }
+
+/** ONLY mobile  x 320px ***/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .list-team:last-child {
+    margin-bottom: 0px;
+  }
+
+  .button-subscribe {
+    margin-top: 16px;
+  }
+}
+
+
+
 
 
 
@@ -137,10 +152,13 @@
     display: flex;
     flex-wrap: wrap;
     }
-
+  
   .tittle-list-team {
-    display: flex; 
-    gap: 24px
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .ul-section-portfolio {
@@ -207,6 +225,8 @@
 
 
 
+
+
  /* Стилі для планшета тут */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -217,14 +237,6 @@
 
   .list-team:not(:nth-last-child(-n+2)) {
     margin-bottom: 64px;
-  }
-
-  .tittle-list-team {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
   }
  
   .footer-info {
@@ -249,6 +261,14 @@
     .conteiner-form {
       margin: 0;
     }
+
+    .list-team:nth-last-child(-n+2) {
+      margin-bottom: 0;
+  }
+
+    .li-portfolio:nth-last-child(-n+2) {
+      margin-bottom: 0;
+  }
 
 }
 
@@ -331,11 +351,13 @@
   .apporoach-content {
     width: calc((100% - 264px) / 3);
     flex-wrap: nowrap;
+    margin-bottom: 0;
   }
-
-  .apporoach-content:last-child {
+  
+  .approach-content:last-child {
+    margin-bottom: 96px;
     margin-right: 0;
-}
+  }
 
 .ul-section-approach {
   flex-wrap: nowrap;
