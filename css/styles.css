@@ -194,15 +194,18 @@ display: none;
 .mob-menu {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fff;
-  width: 320px;
-  height: 640px;
+  width: 100%;
+  height: 100%;
   padding-top: 72px;
   padding-left: 16px;
   padding-right: 16px;
   opacity: 0;
   visibility:hidden;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .mob-menu-list {
@@ -210,7 +213,7 @@ display: none;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .mob-menu-link{
@@ -223,6 +226,7 @@ display: none;
 
 .mob-address {
   font-size: 20px;
+  font-style: normal;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -350,6 +354,9 @@ display: none;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.apporoach-content {
   margin-bottom: 72px;
 }
 
@@ -361,6 +368,7 @@ display: none;
 
 .section-team {
   background-color: #F4F4FD;
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 
@@ -372,20 +380,26 @@ display: none;
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
-  padding-top: 96px;
 }
 
 .tittle-list-team {
   color: #2E2F42;
   text-align: center;
-  margin-bottom: 8px;
   max-width: 264px;
+  margin: 0 auto;
 }
 
 .list-team {
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+  0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  margin-bottom: 72px;
+}
+
+.list-team:last-child {
+  margin-bottom: 0px;
 }
 
 .autor{
@@ -393,14 +407,14 @@ display: none;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   background: #FFF;
-  margin-bottom: 72px;
 }
 
 .h-for-team {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .p-team-text {
@@ -472,7 +486,10 @@ display: none;
 .li-portfolio {
   margin-bottom: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
+}
+
+.li-portfolio:last-child {
+  margin-bottom: 0px;
 }
 
 .li-portfolio:hover{
@@ -589,11 +606,10 @@ display: none;
 .logo-studio-fooler {
   color: #f4f4fd;
   display: inline-block;
-  margin-bottom: 16px;
   text-align: center;
 }
 
-.social-footer-li{
+.social-footer-li {
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -604,7 +620,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: none;
   justify-content: center;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .li-footer{
@@ -669,6 +684,10 @@ background-color: #31d0aa;
   background: #4D5AE5;
 }
 
+.conteiner-form {
+  margin-top: 72px;
+}
+
 .subscribe-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -683,7 +702,7 @@ background-color: #31d0aa;
 }
 
 .input-label-subscribe {
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding-left: 16px;
   border: 1px solid #ffffff;
@@ -695,7 +714,6 @@ background-color: #31d0aa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 .input-label-subscribe::placeholder {
   color: #ffffff;
@@ -716,6 +734,7 @@ background-color: #31d0aa;
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  margin-top: 16px;
 }
 
 .icon-send {
