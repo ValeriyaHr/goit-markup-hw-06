@@ -70,6 +70,10 @@ ul, li {
   padding: 17px 0;
 }
 .li-studio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   position: relative; 
@@ -103,7 +107,9 @@ a.studio-link:hover, a.studio-link-a:active, a.studio-link-a:focus {
 } 
 
 .adress-info {
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color:#434455;
@@ -280,9 +286,11 @@ display: none;
   height: 432px;
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),   
   rgba(46, 47, 66, 0.7)),
-  url(../images/people-office-mob.jpg);
+  url(../images/people-office-mob-2x.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -362,6 +370,7 @@ display: none;
 
 .approach-content:last-child {
   margin-bottom: 96px;
+  margin-bottom: 0;
 }
 
 /* третя секція Our Team */
@@ -580,6 +589,17 @@ display: none;
 
 .footer-logo {
   width: 264px;
+  margin-bottom: 72px;
+}
+
+.logoweb {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .footer-text {
@@ -589,8 +609,6 @@ display: none;
   line-height: 1.5;
   letter-spacing: 0.02em;  
   max-width: 288px;
-  margin-top: 17.5px;
-  margin-bottom: 72px;
   text-align: start;
 }
 
@@ -600,10 +618,11 @@ display: none;
   margin-bottom: 16px;
 }
 
-.logo-studio-fooler {
+.logo-studio-footer {
   color: #f4f4fd;
   display: inline-block;
   text-align: center;
+  margin-bottom: 17px;
 }
 
 .social-footer-li {
@@ -681,27 +700,26 @@ background-color: #31d0aa;
   background: #4D5AE5;
 }
 
-.conteiner-form {
-  margin-top: 72px;
-}
-
 .subscribe-text {
-  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px
 }
 
 .form-subscribe {
   display: inline-block;
 }
 
+.footer-social {
+  margin-bottom: 72px;
+}
+
 .input-label-subscribe {
   width: 288px;
   height: 40px;
-  padding-left: 16px;
   border: 1px solid #ffffff;
   opacity: 0.3;
   background-color: transparent;
@@ -734,6 +752,7 @@ background-color: #31d0aa;
   border-radius: 4px;
   margin: 0 auto;
 }
+
 
 .icon-send {
   margin-left: 16px;
