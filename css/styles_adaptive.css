@@ -116,15 +116,6 @@
       padding-bottom: 120px;
     }
 
-    .ul-section-address {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      background-color: #FFFFFF;
-      letter-spacing: 0.02em;
-      color: #2e2f42;
-    }
-
     .section-one {
       padding: 112px 0; 
     }
@@ -257,6 +248,15 @@
     margin-right: 24px;
   }
 
+  .ul-section-address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #FFFFFF;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+
 }
 
 
@@ -361,6 +361,10 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .ul-section-portfolio {
+    gap: 48px 24px; 
   }
 
   .section-principles {
