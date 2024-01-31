@@ -364,15 +364,6 @@ display: none;
   letter-spacing: 0.02em;
 }
 
-.apporoach-content {
-  margin-bottom: 72px;
-}
-
-.approach-content:last-child {
-  margin-bottom: 96px;
-  margin-bottom: 0;
-}
-
 /* третя секція Our Team */
 
 .section-team {
@@ -404,7 +395,6 @@ display: none;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
   0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
   0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  margin-bottom: 72px;
 }
 
 .autor{
@@ -481,8 +471,8 @@ display: none;
 .section-portfolio {
   font-weight: 500;
   color: #8E8F99;
-  padding-bottom: 120px;
-  margin-top: 96px; 
+  padding-bottom: 96px;
+  padding-top: 96px; 
 }
 
 .ul-section-portfolio {
@@ -490,12 +480,7 @@ display: none;
 }
 
 .li-portfolio {
-  margin-bottom: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.li-portfolio:last-child {
-  margin-bottom: 0px;
 }
 
 .li-portfolio:hover{
@@ -711,10 +696,6 @@ background-color: #31d0aa;
 
 .form-subscribe {
   display: inline-block;
-}
-
-.footer-social {
-  margin-bottom: 72px;
 }
 
 .input-label-subscribe {
