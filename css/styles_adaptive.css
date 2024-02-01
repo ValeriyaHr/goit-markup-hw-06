@@ -51,6 +51,20 @@
     margin-bottom: 72px;
   }
 
+  .ul-section-approach {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .tittle-list-team {
+    flex-direction: column;
+  }
+
+  .ul-section-portfolio {
+    flex-direction: column;
+    gap: 48px;
+  }
+
 }
 
 
@@ -141,29 +155,26 @@
     
 
   .ul-section-approach {
-    display: flex;
     flex-wrap: wrap;
     gap: 72px 24px;
     }
+
+    
+  .apporoach-tittle {
+    text-align: start;
+  }
+
   
   .tittle-list-team {
-    max-width: 100%;
-    display: flex;
     gap: 64px 24px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .ul-section-portfolio {
-    display: flex;
     flex-wrap: wrap;
     gap: 72px 24px; 
     justify-content: center;
-  }
-
-  .content {
-    font-weight: 500;
-    margin-bottom: 0;
   }
 
   .autor {  
@@ -281,6 +292,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 17px 0;
+    margin-right: 76px;
   }
 
   .logo-studio {
@@ -376,5 +388,8 @@
     margin-bottom: 0;
   }
 
+  .content {
+    font-weight: 400;
+  }
 
 } 
