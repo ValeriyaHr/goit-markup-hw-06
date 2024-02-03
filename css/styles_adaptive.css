@@ -6,12 +6,18 @@
  
   }
 
-  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .overlay {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),   
-      rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-mob-2x.jpg);
-    } 
+  .overlay {
+    max-width: 320px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),   
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-mob.jpg);
+  }
+
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .overlay {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+          url(../images/people-office-mob-2x.jpg);
+      }
   }
 
   .privacy-chekbox {
@@ -191,6 +197,7 @@
   }
 
   .footer-logo {
+    width: 288px;
     margin-right: 120px;
     text-align: start;
   }
@@ -216,10 +223,6 @@
       margin-left: 80px;
   }
 
-  .footer-text {
-    max-width: 264px;
-  }
-
   .label-subscribe {
     margin-right: 24px;
   }
@@ -239,6 +242,11 @@
   .section-one {
     padding:  112px 0; 
   }
+
+  .portfolio-img {
+    width: 356px;
+    height: 300px;
+  }
  
   .footer-info {
     flex-wrap: wrap;
@@ -257,6 +265,10 @@
 
   .footer-logo {
     margin-right: 24px;
+  }
+
+  .footer-text {
+    max-width: 264px;
   }
 
   .ul-section-address {
@@ -373,6 +385,11 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .portfolio-img {
+    width: 360px;
+    height: 300px;
   }
 
   .ul-section-portfolio {
